@@ -44,6 +44,12 @@ Event Bus: Nodes, Distributor, New Session Queuer, ve Session Map  arasındaki i
 
 Hub: Router, Distributor, Session Map, New Session Queuer, Event Bus ın birleşimidir.
 
-GRİD 3:
+GRID 3:
 
 ![grid3](https://user-images.githubusercontent.com/28295071/124995936-c7dbac00-e050-11eb-97f7-17f4029ec271.png)
+
+GRID 4:
+
+![grid_4](https://user-images.githubusercontent.com/28295071/124996059-ffe2ef00-e050-11eb-8dd3-a430eab5d918.png)
+
+Ayrıca selenium grid 4 kapsamlı bir docker konfigurasyonu ile gelmiştir.
