@@ -56,12 +56,8 @@ public class GridFactory {
                 capabilities.setPlatform(Platform.MAC);
                 break;
 
-            case "safari":
-                capabilities.setPlatform(Platform.WIN10);
-                break;
-
             default:
-                capabilities.setBrowserName("chrome");
+                capabilities.setBrowserName("WIN10");
                 break;
         }
 
