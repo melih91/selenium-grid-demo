@@ -1,6 +1,8 @@
 # selenium-grid-demo
 Selenium Grid 4.0.0 Demo Example 
 
+![Ekran Resmi 2021-07-09 11 16 47](https://user-images.githubusercontent.com/28295071/125047213-6abf1500-e0a7-11eb-81da-b0650ab6b076.png)
+
 
 Öncelikle selenium grid jar dosyasını bilgisayarımıza indiriyoruz. 
 Link: https://www.selenium.dev/downloads/
