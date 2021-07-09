@@ -1,6 +1,7 @@
 package com.practicetestautomation.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -27,7 +28,8 @@ public class LoginTests extends BaseTest {
 
 	@Parameters({ "username", "password", "expectedMessage" })
 	@Test(priority = 2)
-	public void negativeLoginTest(String username, String password, String expectedErrorMessage) {
+	@DataProvider(parallel = true)
+	public Object[] negativeLoginTest(String username, String password, String expectedErrorMessage) {
 		TestLoginPage testLoginPage = new TestLoginPage(driver, log).open();
 		testLoginPage.negativeLogIn(username, password);
 
@@ -35,5 +37,6 @@ public class LoginTests extends BaseTest {
 		String message = testLoginPage.getErrorMessageText();
 
 		Assert.assertTrue(message.contains(expectedErrorMessage), "Message doesn't contain expected text.");
+		return new Object[0];
 	}
 }
